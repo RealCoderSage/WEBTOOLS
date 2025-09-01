@@ -1,0 +1,13 @@
+colorama
+django
+django-cors-headers
+django-environ
+distlib
+filelock
+gunicorn
+joblib
+numpy
+pillow
+platformdirs
+qrcode
+virtualenv
