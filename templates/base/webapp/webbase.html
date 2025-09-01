@@ -1,0 +1,335 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebTools - Smart SaaS Tools for Your Business</title>
+    <meta name="description"
+        content="WebTools provides powerful tools like UTM Links Builder and Invoice Maker to simplify your workflow, improve productivity, and grow your business.">
+    <meta name="keywords"
+        content="UTM Builder, Invoice Maker, SaaS Tools, Marketing Automation, Business Tools, WebTools">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top custom-navbar">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand fw-bold text-primary logo" href="#">
+                    <i class="bi bi-lightning-charge-fill"></i> WebTools
+                </a>
+    
+                <!-- Mobile Toggle -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <!-- Nav Links -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+                        <li class="nav-item"><a class="nav-link nav-animate" href="#">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle nav-animate" href="#" id="productsDropdown" role="button"
+                                data-bs-toggle="dropdown">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu shadow-sm border-0">
+                                <li><a class="dropdown-item" href="#">UTM Links Builder</a></li>
+                                <li><a class="dropdown-item" href="#">Invoices Maker</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link nav-animate" href="#">About</a></li>
+                        <li class="nav-item"><a class="nav-link nav-animate" href="#">Contact</a></li>
+    
+                        <!-- Auth Buttons -->
+                        <li class="nav-item">
+                            <a class="btn btn-auth btn-login ms-3" href="#">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-auth btn-signup ms-2" href="#">Signup</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero d-flex align-items-center text-center">
+        <div class="container position-relative">
+            <h1 class="display-4 fw-bold text-dark">Smart SaaS Tools for Modern Businesses</h1>
+            <p class="lead text-secondary">
+                Boost your productivity with WebTools: UTM Links Builder & Invoice Maker
+            </p>
+            <a href="#" class="btn btn-lg btn-primary mt-3 shadow-lg rounded-pill px-4">
+                🚀 Get Started
+            </a>
+
+            <!-- Floating Shapes -->
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+            <div class="floating-shape shape-4"></div>
+        </div>
+    </section>
+
+
+    <!-- ===== OUR PRODUCTS ===== -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">Our Products</h2>
+
+            <!-- Product 1 (Left) -->
+            <div class="row align-items-center mb-5">
+                <div class="col-md-6">
+                    <div class="card shadow-lg border-0">
+                        <div class="card-body p-4">
+                            <h3 class="card-title mb-3 text-primary">UTM Links Builder</h3>
+                            <p class="card-text text-muted" style="text-align: justify;">
+                                The <strong>UTM Links Builder</strong> is a smart solution for marketers, businesses, and
+                                creators who
+                                want to track campaigns effectively. With just a few clicks, you can generate professional,
+                                trackable links embedded with <strong>UTM parameters</strong> that seamlessly integrate with
+                                tools like
+                                Google Analytics. This allows you to monitor where your traffic is coming from, which
+                                campaigns are
+                                performing the best, and how users are engaging with your content. Whether you are running
+                                ads, social
+                                media promotions, or email campaigns, our UTM builder ensures clarity and precision in
+                                performance
+                                tracking. The tool is designed to save time, improve ROI, and give you detailed insights
+                                into every
+                                click—helping you make data-driven decisions with confidence.
+                            </p>
+                            <a href="#" class="btn btn-primary mt-3">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="{% static 'images/utm.png' %}" alt="UTM Links Builder" class="img-fluid custom-rounded-shadow">
+                </div>
+            </div>
+
+            <!-- Product 2 (Right) -->
+            <div class="row align-items-center flex-md-row-reverse mb-5">
+                <div class="col-md-6">
+                    <div class="card shadow-lg border-0">
+                        <div class="card-body p-4">
+                            <h3 class="card-title mb-3 text-success">Invoices Maker</h3>
+                            <p class="card-text text-muted" style="text-align: justify;">
+                                Our <strong>Invoices Maker</strong> is a powerful tool for freelancers, startups, and
+                                businesses that
+                                want to simplify their billing process. Instead of wasting time with complex spreadsheets or
+                                expensive
+                                software, this tool allows you to generate <strong>professional invoices</strong> in just a
+                                few
+                                seconds. You can customize client details, add services or products, apply taxes, and
+                                download invoices
+                                instantly in a polished format. The system also helps you keep track of payments, organize
+                                client
+                                records, and maintain a seamless billing workflow. Designed with <strong>user-friendly
+                                    navigation</strong>
+                                and responsive layouts, it ensures smooth usage on desktop and mobile devices. With this
+                                invoices maker,
+                                you can not only look professional but also save time and stay on top of your finances.
+                            </p>
+                            <a href="#" class="btn btn-success mt-3">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="{% static 'images/invoice.png' %}" alt="Invoices Maker" class="img-fluid custom-rounded-shadow">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ===== HOW IT WORKS ===== -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">How It Works</h2>
+            <div class="row align-items-center mb-4">
+                <div class="col-md-6">
+                    <div class="card shadow-lg border-0 p-4">
+                        <h5 class="fw-bold">Quick Sign Up</h5>
+                        <p>
+                            Getting started is simple and free. Create your account in just a few clicks and gain instant
+                            access to powerful tools that make managing your online presence effortless. No complicated
+                            steps, no delays—just a seamless start to growing your business.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="{% static 'images/Sign-up.png' %}" alt="Sign up process" class="img-fluid custom-rounded-shadow">
+                </div>
+            </div>
+    
+            <div class="row align-items-center mb-4 flex-row-reverse">
+                <div class="col-md-6">
+                    <div class="card shadow-lg border-0 p-4">
+                        <h5 class="fw-bold">Smart Tools</h5>
+                        <p>
+                            From building custom UTM links to generating professional invoices, our platform provides
+                            everything you need in one dashboard. Each tool is designed with speed, accuracy, and ease of
+                            use in mind so you can focus on scaling your business without distractions.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="{% static 'images/business-tools.png' %}" alt="Business tools" class="img-fluid custom-rounded-shadow">
+                </div>
+            </div>
+    
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="card shadow-lg border-0 p-4">
+                        <h5 class="fw-bold">Grow With Confidence</h5>
+                        <p>
+                            Our platform helps you track results, manage campaigns, and streamline operations in one place.
+                            With clear insights and reliable features, you save valuable time and make smarter decisions
+                            that boost growth. Build consistency, improve efficiency, and stay ahead of competition
+                            effortlessly.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="{% static 'images/business-growth.png' %}" alt="Business growth" class="img-fluid custom-rounded-shadow">
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===== BENEFITS ===== -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">Why Choose WebTools?</h2>
+    
+            <!-- Benefit 1 -->
+            <div class="row align-items-center mb-4">
+                <div class="col-md-6">
+                    <div class="card shadow-lg border-0 p-4">
+                        <h5 class="fw-bold text-primary">User-Friendly Interface</h5>
+                        <p>
+                            WebTools is built with simplicity and efficiency in mind. The intuitive interface ensures that
+                            anyone,
+                            from beginners to experienced professionals, can navigate the dashboard effortlessly. No
+                            technical skills
+                            are required, and all features are clearly labeled and easy to access. By reducing complexity,
+                            you save
+                            time, avoid errors, and focus on what really matters: running your business and improving
+                            productivity.
+                            Every tool, from UTM link creation to invoice management, is designed to be instantly usable,
+                            enabling
+                            faster adoption and smoother workflow.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="{% static 'images/signup-process.png' %}" alt="User-Friendly Interface" class="img-fluid custom-rounded-shadow">
+                </div>
+            </div>
+    
+            <!-- Benefit 2 -->
+            <div class="row align-items-center mb-4 flex-row-reverse">
+                <div class="col-md-6">
+                    <div class="card shadow-lg border-0 p-4">
+                        <h5 class="fw-bold text-success">Save Time and Effort</h5>
+                        <p>
+                            Automate repetitive and time-consuming tasks with WebTools. Whether it’s generating trackable
+                            UTM links
+                            for marketing campaigns or creating professional invoices for clients, the platform streamlines
+                            your
+                            workflow. By minimizing manual work, you can focus on growing your business, improving
+                            strategies, and
+                            building relationships with clients. Automation not only increases efficiency but also reduces
+                            human
+                            error, giving you more accurate results and greater confidence in your business decisions.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="{% static 'images/save-time.png' %}" alt="Save Time"
+                        class="img-fluid custom-rounded-shadow">
+                </div>
+            </div>
+    
+            <!-- Benefit 3 -->
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="card shadow-lg border-0 p-4">
+                        <h5 class="fw-bold text-danger">Boost Online Visibility</h5>
+                        <p>
+                            WebTools helps you enhance your online presence with optimized content, clean invoices, and
+                            trackable links that drive measurable results. UTM links allow you to monitor campaign
+                            performance,
+                            while SEO-optimized content ensures higher discoverability on search engines. By combining
+                            analytics
+                            and practical business tools, the platform provides actionable insights to help your brand grow
+                            faster
+                            online. Improve client engagement, track performance, and maintain a professional image
+                            effortlessly.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="{% static 'images/seo-growth.png' %}" alt="SEO Optimized"
+                        class="img-fluid custom-rounded-shadow">
+                </div>
+            </div>
+    
+        </div>
+    </section>
+
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row text-center text-md-start">
+    
+                <!-- Quick Links -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">UTM Links Builder</a></li>
+                        <li><a href="#">Invoices Maker</a></li>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Brand -->
+                <div class="col-md-4 mb-4 text-center">
+                    <h5 class="fw-bold">WebTools</h5>
+                    <p>Smart Tools for Smarter Businesses</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="#"><i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+    
+                <!-- Copyright -->
+                <div class="col-md-4 mb-4 text-md-end text-center">
+                    <p class="small">&copy; 2025 <strong>WebTools</strong>. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{% static 'bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+</body>
+
+</html>

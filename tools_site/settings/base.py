@@ -18,9 +18,7 @@ SECRET_KEY = env(
     default="unsafe-default-key-change-in-env"
 )
 
-DEBUG = env.bool("DJANGO_DEBUG", False)
 
-ALLOWED_HOSTS = env.list("DJANGO_ALLOWED_HOSTS", default=[])
 
 # =====================
 # Installed Apps
@@ -139,6 +137,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 SECURE_BROWSER_XSS_FILTER = True
 SECURE_CONTENT_TYPE_NOSNIFF = True
 X_FRAME_OPTIONS = "SAMEORIGIN"
+
+CORS_ALLOW_ALL_ORIGINS = True
+
 
 # =====================
 # Logging
